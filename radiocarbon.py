@@ -159,7 +159,7 @@ class RadioCarbon():
         # Plus Character Mail Listing
         print("\nEmails with Plus (+) Character:\n" \
               "- You can add a '+' symbol to email addresses - those often include the service name\n")
-        print(tabulate(self.plus_mails, headers=["Mail", "User", "Provider"]))
+        print(tabulate(self.plus_mails, headers=["Mail", "User", "Alias"]))
 
 def printWelcome():
     """
