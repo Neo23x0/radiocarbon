@@ -19,7 +19,7 @@ from tabulate import tabulate
 
 WORD_BLACKLIST = ['gmail', 'hotmail', 'msn', 'mail', 'gmx', 'yahoo', 'arcor', 'freenet', '123456',
                   'password', 'online']
-YEAR_BLACKLIST = ['01', '33', '44', '55', '66', '77', '88', '99']
+YEAR_BLACKLIST = ['01', '22', '33', '44', '55', '66', '77', '88', '99', '69']
 ONE_TIME_INDICATORS = ['mailinator', 'guerrillamail', 'maildrop', 'temp-mail', 'dropmail', 'minutemail',
                        'getnada', 'trashmail', 'yopmail', 'emailsensai']
 
