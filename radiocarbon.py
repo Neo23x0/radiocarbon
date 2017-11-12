@@ -16,7 +16,6 @@ import argparse
 import re
 from collections import Counter
 from tabulate import tabulate
-import colorama
 
 WORD_BLACKLIST = ['gmail', 'hotmail', 'msn', 'mail', 'gmx', 'yahoo', 'arcor', 'freenet', '123456',
                   'password', 'online']
