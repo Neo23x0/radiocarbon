@@ -20,6 +20,7 @@ The idea behind RadioCarbon uses the fact that the users of the service provide 
 - Users typically don't include a year in the password that is in the future (e.g. `pass2022`, `website2045`)
 - Users include the name of the website/service in their passwords (e.g. `website1234`, `pass4website`)
 - Users use one time email addresses for the registration (e.g. `website-12@mailinator.com`, `mail4website@maildrop.cc`)
+- Users can use the "+" character to easily create [new email aliases](https://fieldguide.gizmodo.com/how-to-use-the-infinite-number-of-email-addresses-gmail-1609458192) for certain purposes (e.g. `john.smith+onlineshop.com@gmail.com`)
 
 # The Inner Workings
 
@@ -45,3 +46,5 @@ If a leak file doesn't contain th clear text passwords, use [john the cracker](h
 ![Example1](https://raw.githubusercontent.com/Neo23x0/radiocarbon/master/screens/radiocarbon1.png)
 
 ![Example2](https://raw.githubusercontent.com/Neo23x0/radiocarbon/master/screens/radiocarbon2.png)
+
+![Example3](https://raw.githubusercontent.com/Neo23x0/radiocarbon/master/screens/radiocarbon3.png)
