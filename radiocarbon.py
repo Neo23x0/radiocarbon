@@ -14,6 +14,7 @@ __version__ = "0.2"
 import os
 import argparse
 import re
+import datetime
 from collections import Counter
 from tabulate import tabulate
 
@@ -109,18 +110,24 @@ class RadioCarbon():
             if dom_upper in self.word_stats:
                 del self.word_stats[dom_upper]
         # Numbers - extend years
-        print("Extending numbers in years")
+        print("Extending numbers in years ...")
         for num in list(self.number_stats):
             if num in YEAR_BLACKLIST:
                 del self.number_stats[num]
                 continue
             if len(num) == 2:
                 newNum = "(20){0}".format(num)
+                # Future detection
+                date = datetime.datetime.strptime("20{0}".format(num),"%Y")
+                present = datetime.datetime.now()
+                if date > present:
+                    newNum = "{0} (future)".format(newNum)
+                # Replace the value
                 oldCount = self.number_stats[num]
                 self.number_stats += Counter({newNum: oldCount})
                 del self.number_stats[num]
         # Removing typical passwords from pass lists
-        print("Removing typical passwords")
+        print("Removing typical passwords ...")
         for p in self.passwords:
             p_lower = p.lower()
             p_upper = p.upper()
